@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hp.sailproductapp.feature.Bokarodisplaylist2">
+
+    <ListView
+
+        android:id="@+id/listbokaro2"
+        android:layout_width="399dp"
+        android:layout_height="523dp"
+        tools:layout_editor_absoluteX="-5dp"
+        tools:ignore="MissingConstraints">
+
+    </ListView>
+
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

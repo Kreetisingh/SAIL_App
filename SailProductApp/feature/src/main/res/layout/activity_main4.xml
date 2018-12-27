@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Rourkela_Activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="137dp">
+
+        <Button
+            android:id="@+id/button12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="75dp"
+            android:layout_marginEnd="60dp"
+            android:onClick="parseJSON"
+            android:text="parsedata" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="132dp"
+            android:layout_height="110dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="118dp"
+            android:layout_marginTop="28dp"
+            app:srcCompat="@drawable/rourkela" />
+
+        <Button
+            android:id="@+id/button11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="87dp"
+            android:layout_marginStart="59dp"
+            android:onClick="getJSON"
+            android:text="getdata" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@+id/textView3"
+            android:layout_marginTop="-138dp"
+            android:scrollbars="vertical" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="351dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="138dp"
+            android:gravity="center"
+            android:text="Prouduct under Rourkela Steel Plant :"
+            android:textColor="@android:color/background_dark"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/rorbutton"
+            android:layout_width="44dp"
+            android:layout_height="49dp"
+            android:layout_alignEnd="@+id/imageView10"
+            android:layout_alignParentBottom="true"
+            android:onClick="rourkelaback"
+            android:src="@drawable/iconbackpng" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="357dp"
+            android:layout_height="157dp"
+            android:layout_below="@+id/imageView9"
+            android:foregroundGravity="center"
+            app:srcCompat="@drawable/dspsplant" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.093"
+        android:background="@drawable/logsailwater">
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

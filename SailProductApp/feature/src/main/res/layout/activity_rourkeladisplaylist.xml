@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Rourkeladisplaylist">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    app:rowCount="1">
+
+                    <TextView
+                        android:id="@+id/tx_name"
+                        android:layout_width="55dp"
+                        android:layout_height="38dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_toEndOf="@+id/tx_name"
+                        android:gravity="left|center"
+                        android:text="Category"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:textSize="10sp"
+
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tx_name1"
+                        android:layout_width="55dp"
+                        android:layout_height="38dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_toEndOf="@+id/tx_name1"
+                        android:gravity="left|center"
+                        android:text="Grade"
+                        android:textSize="10sp"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tx_name2"
+                        android:layout_width="55dp"
+                        android:layout_height="38dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_toEndOf="@+id/tx_name4"
+                        android:gravity="left|center"
+                        android:text="C_Min"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tx_name3"
+                        android:layout_width="55dp"
+                        android:layout_height="38dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_toEndOf="@+id/tx_name7"
+                        android:gravity="center"
+                        android:text="C_Max"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tx_name4"
+                        android:layout_width="55dp"
+                        android:layout_height="38dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_toEndOf="@+id/tx_name3"
+                        android:gravity="left|center"
+                        android:text="S_Min"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tx_name5"
+                        android:layout_width="55dp"
+                        android:layout_height="38dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_toEndOf="@+id/tx_name2"
+                        android:gravity="left|center"
+                        android:text="S_Max"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tx_name6"
+                        android:layout_width="55dp"
+                        android:layout_height="38dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_toEndOf="@+id/tx_name6"
+                        android:gravity="left|center"
+                        android:text="P_Min"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tx_name7"
+                        android:layout_width="55dp"
+                        android:layout_height="38dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="left|center"
+                        android:text="P_Max"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tx_name8"
+                        android:layout_width="55dp"
+                        android:layout_height="38dp"
+                        android:layout_alignParentTop="true"
+                        android:gravity="left|center"
+                        android:text="SP_Max"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tx_name9"
+                        android:layout_width="55dp"
+                        android:layout_height="38dp"
+                        android:layout_alignParentTop="true"
+                        android:gravity="left|center"
+                        android:text="Mn_Min"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/tx_name10"
+                        android:layout_width="55dp"
+                        android:layout_height="38dp"
+                        android:layout_alignParentTop="true"
+                        android:gravity="left|center"
+                        android:text="Mn_Max"
+                        android:textSize="10sp"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tx_name11"
+                        android:layout_width="55dp"
+                        android:layout_height="38dp"
+                        android:layout_alignParentTop="true"
+                        android:gravity="left|center"
+                        android:text="Si_Min"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tx_name12"
+                        android:layout_width="55dp"
+                        android:layout_height="38dp"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center"
+                        android:text="Si_Max"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tx_name13"
+                        android:layout_width="55dp"
+                        android:layout_height="38dp"
+                        android:layout_alignParentTop="true"
+                        android:gravity="left|center"
+                        android:layout_toEndOf="@+id/tx_name12"
+
+                        android:text="Cr_Min"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tx_name14"
+                        android:layout_width="55dp"
+                        android:layout_height="38dp"
+                        android:layout_alignParentTop="true"
+                        android:gravity="left|center"
+                        android:text="Cr_Max"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:layout_toEndOf="@+id/tx_name13"
+
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tx_name15"
+                        android:layout_width="55dp"
+                        android:layout_height="38dp"
+                        android:layout_alignParentTop="true"
+                        android:gravity="left|center"
+                        android:text="V_Min"
+                        android:layout_toEndOf="@+id/tx_name14"
+
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tx_name16"
+                        android:layout_width="55dp"
+                        android:layout_height="38dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="left|center"
+                        android:text="V_Max"
+                        android:layout_toEndOf="@+id/tx_name15"
+
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tx_name17"
+                        android:layout_width="55dp"
+                        android:layout_height="38dp"
+                        android:layout_alignParentTop="true"
+                        android:gravity="left|center"
+                        android:text="Pb_Min"
+                        android:layout_toEndOf="@+id/tx_name16"
+
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tx_name18"
+                        android:layout_width="55dp"
+                        android:layout_height="38dp"
+                        android:layout_alignParentTop="true"
+                        android:gravity="left|center"
+                        android:text="Pb_Max"
+                        android:layout_toEndOf="@+id/tx_name17"
+
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tx_name19"
+                        android:layout_width="55dp"
+                        android:layout_height="38dp"
+                        android:layout_alignParentTop="true"
+                        android:gravity="left|center"
+                        android:text="Mo_Min"
+                        android:textSize="12sp"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:layout_toEndOf="@+id/tx_name18"
+
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tx_name20"
+                        android:layout_width="55dp"
+                        android:layout_height="38dp"
+                        android:layout_alignParentTop="true"
+                        android:gravity="left|center"
+                        android:text="Mo_Max"
+                        android:textSize="10sp"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:layout_toEndOf="@+id/tx_name19"
+
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tx_name21"
+                        android:layout_width="55dp"
+                        android:layout_height="38dp"
+                        android:layout_alignParentTop="true"
+                        android:gravity="left|center"
+                        android:text="Al_Min"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:layout_toEndOf="@+id/tx_name20"
+
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tx_name22"
+                        android:layout_width="55dp"
+                        android:layout_height="38dp"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center"
+                        android:text="Al_Max"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:textSize="10sp"
+                        android:layout_toEndOf="@+id/tx_name21"
+
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tx_name23"
+                        android:layout_width="55dp"
+                        android:layout_height="38dp"
+                        android:layout_alignParentTop="true"
+                        android:gravity="left|center"
+                        android:text="B_Min"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:layout_toEndOf="@+id/tx_name22"
+
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tx_name24"
+                        android:layout_width="55dp"
+                        android:layout_height="38dp"
+                        android:layout_alignParentTop="true"
+                        android:gravity="left|center"
+                        android:text="B_Max"
+                        android:layout_toEndOf="@+id/tx_name23"
+
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tx_name25"
+                        android:layout_width="55dp"
+                        android:layout_height="38dp"
+                        android:layout_alignParentTop="true"
+                        android:gravity="left|center"
+                        android:text="Ti_Max"
+                        android:layout_toEndOf="@+id/tx_name24"
+
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/tx_name26"
+                        android:layout_width="55dp"
+                        android:layout_height="38dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="left|center"
+                        android:text="Cu_Min"
+                        android:layout_toEndOf="@+id/tx_name25"
+
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/tx_name27"
+                        android:layout_width="55dp"
+                        android:layout_height="38dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="left|center"
+                        android:text="Cu_Max"
+                        android:layout_toEndOf="@+id/tx_name26"
+
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/tx_name28"
+                        android:layout_width="55dp"
+                        android:layout_height="38dp"
+                        android:layout_alignParentTop="true"
+                        android:gravity="left|center"
+                        android:text="CE_Max"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:textSize="10sp"
+                        android:layout_toEndOf="@+id/tx_name27"
+
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tx_name29"
+                        android:layout_width="55dp"
+                        android:layout_height="38dp"
+                        android:layout_alignParentTop="true"
+                        android:gravity="left|center"
+                        android:text="MAE"
+                        android:layout_toEndOf="@+id/tx_name28"
+
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/tx_name30"
+                        android:layout_width="55dp"
+                        android:layout_height="38dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="left|center"
+                        android:text="Ni_Min"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:layout_toEndOf="@+id/tx_name29"
+                        />
+
+                    <TextView
+                        android:id="@+id/tx_name31"
+                        android:layout_width="55dp"
+                        android:layout_height="38dp"
+                        android:layout_alignParentTop="true"
+                        android:gravity="left|center"
+                        android:text="Ni_Max"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:textSize="10sp"
+                        android:layout_toEndOf="@+id/tx_name30"
+
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tx_name32"
+                        android:layout_width="55dp"
+                        android:layout_height="38dp"
+                        android:layout_alignParentTop="true"
+                        android:gravity="left|center"
+                        android:text="Nb_Max"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:layout_toEndOf="@+id/tx_name31"
+
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+
+
+                </android.support.v7.widget.GridLayout>
+
+                <ListView
+
+                    android:id="@+id/rourkelalist"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="-5dp">
+
+                </ListView>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

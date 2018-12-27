@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hp.sailproductapp.app">
+
+    <application>
+        <activity android:name="com.example.hp.sailproductapp.feature.Bokarodisplaylist2" />
+        <activity android:name=".Bokaro_display2"></activity>
+    </application>
+
+</manifest>
